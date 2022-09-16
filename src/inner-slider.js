@@ -180,7 +180,7 @@ export class InnerSlider extends React.Component {
     setTrackStyle &&
       this.updateState(spec, setTrackStyle, () => {
         if (
-          this.state.currentSlide >= React.Children.count(this.props.children)
+          this.state.currentSlide > React.Children.count(this.props.children)
         ) {
           this.changeSlide({
             message: "index",
